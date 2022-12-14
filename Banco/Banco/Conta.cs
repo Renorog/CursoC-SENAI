@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Banco {
-    public class Conta {
+    public abstract class Conta {
 
         public int Numero { get;  set; }
 
@@ -13,15 +13,15 @@ namespace Banco {
         public Conta() {
         }
 
-        public void Deposita(double valor) {
-            this.Saldo += valor;
-        }
+        public abstract void Deposita(double valor);
 
-        public virtual void Saca(double valor) {
+
+
+        public abstract void Saca(double valor);
           
-                this.Saldo -= valor ;
+              
                     
-        }
+        
 
         public void Transfere(double valor, Conta destino) {
             Saca(valor);

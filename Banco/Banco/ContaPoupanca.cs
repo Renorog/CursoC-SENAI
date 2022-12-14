@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Banco {
     public class ContaPoupanca : Conta{
-
+        public override void Deposita(double valor) {
+            this.Saldo += valor;
+        }
 
         public override void Saca(double valor) {
-            base.Saca(valor + 0.10);
+            this.Saldo -= valor;
         }
+
+
 
     }
 }
