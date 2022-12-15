@@ -38,6 +38,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboContas = new System.Windows.Forms.ComboBox();
             this.botaoNovaConta = new System.Windows.Forms.Button();
+            this.botaoImpostos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -180,11 +181,23 @@
             this.botaoNovaConta.UseVisualStyleBackColor = true;
             this.botaoNovaConta.Click += new System.EventHandler(this.botaoNovaConta_Click);
             // 
+            // botaoImpostos
+            // 
+            this.botaoImpostos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoImpostos.Location = new System.Drawing.Point(107, 378);
+            this.botaoImpostos.Name = "botaoImpostos";
+            this.botaoImpostos.Size = new System.Drawing.Size(75, 23);
+            this.botaoImpostos.TabIndex = 10;
+            this.botaoImpostos.Text = "Impostos";
+            this.botaoImpostos.UseVisualStyleBackColor = true;
+            this.botaoImpostos.Click += new System.EventHandler(this.botaoImpostos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 413);
+            this.Controls.Add(this.botaoImpostos);
             this.Controls.Add(this.botaoNovaConta);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textoValor);
@@ -221,6 +234,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboContas;
         private System.Windows.Forms.Button botaoNovaConta;
+        private System.Windows.Forms.Button botaoImpostos;
     }
 }
 

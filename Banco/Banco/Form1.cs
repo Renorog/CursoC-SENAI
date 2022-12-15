@@ -119,6 +119,16 @@ namespace Banco {
             formularioDeCadastro.ShowDialog();
         }
 
+        private void botaoImpostos_Click(object sender, EventArgs e) {
+            ContaCorrente conta = new ContaCorrente();
+            conta.Deposita(200.0);
+
+            MessageBox.Show("imposto da conta corrente = " + conta.CalculaTributos());
+            ITributavel t = conta;
+
+            MessageBox.Show("imposto da conta pela interface = " + t.CalculaTributos());
+        }
+
         //private void comboDestinoTranferencia_SelectedIndexChanged(object sender, EventArgs e) {
         //    //int indice1 = comboDestinoTranferencia.SelectedIndex;
         //    //int indice2 = 
